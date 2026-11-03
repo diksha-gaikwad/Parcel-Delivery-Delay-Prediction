@@ -1,0 +1,36 @@
+PARCEL DELIVERY DATA AUDIT
+================================
+Rows: 25000
+Columns: 15
+Exact duplicate rows: 0
+
+Missing values by column:
+delivery_id            0
+delivery_partner       0
+package_type           0
+vehicle_type           0
+delivery_mode          0
+region                 0
+weather_condition      0
+distance_km            0
+package_weight_kg      0
+delivery_time_hours    0
+expected_time_hours    0
+delayed                0
+delivery_status        0
+delivery_rating        0
+delivery_cost          0
+
+Target distribution:
+delayed
+no     18331
+yes     6669
+
+Columns available:
+delivery_id, delivery_partner, package_type, vehicle_type, delivery_mode, region, weather_condition, distance_km, package_weight_kg, delivery_time_hours, expected_time_hours, delayed, delivery_status, delivery_rating, delivery_cost
+
+Model features:
+distance_km, package_weight_kg, delivery_partner, package_type, vehicle_type, delivery_mode, region, weather_condition
+
+Excluded outcome/identifier fields: delivery_id, delivery_status, delivery_time_hours, delivery_rating.
+The expected_time_hours field is not used because its format and meaning need confirmation.
